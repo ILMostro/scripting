@@ -19,7 +19,9 @@ def fun(result):
     results = [result]
     while result > 1:
         if result in evens:
-            result = (result / 2)
+            # result = (result / 2)
+            # Let's get bottom result int, rather than float
+            result = (result // 2)
             results.append(result)
             continue
         elif result in odds:
@@ -36,7 +38,8 @@ def fun(result):
             print("Out of bounds")
 
 
-# def 
+# def funsum():
+
 
 if __name__ == "__main__":
     print(fun(3))
